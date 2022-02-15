@@ -1,7 +1,5 @@
-PyBluez
+PyBluez-Bitalino
 =======
-
-[![Build Status](https://github.com/pybluez/pybluez/workflows/Build/badge.svg)](https://github.com/pybluez/pybluez/actions?query=workflow%3ABuild)
 
 The PyBluez module allows Python code to access the host machine's Bluetooth
 resources.
@@ -18,43 +16,8 @@ Platform Support
 Python Version Support
 ----------------------
 
-| Python 2 | Python 3 (min 3.5) |
-|:--------:|:------------------:|
-| Till Version 0.22 | Version 0.23 and newer |
+Python 3.7 + 
 
-
-Contributors Wanted
--------------------
-
-**This project is not under active development.** Contributions are strongly
-desired to resolve compatibility problems on newer systems, address bugs, and
-improve platform support for various features.
-
-
-Examples
---------
-
-```python
-# simple inquiry example
-import bluetooth
-
-nearby_devices = bluetooth.discover_devices(lookup_names=True)
-print("Found {} devices.".format(len(nearby_devices)))
-
-for addr, name in nearby_devices:
-    print("  {} - {}".format(addr, name))
-```
-
-```python
-# bluetooth low energy scan
-from bluetooth.ble import DiscoveryService
-
-service = DiscoveryService()
-devices = service.discover(2)
-
-for address, name in devices.items():
-    print("name: {}, address: {}".format(name, address))
-```
 
 ### GNU/Linux and Windows XP examples:
 
@@ -105,6 +68,8 @@ Please refer to the [installation instructions](/docs/install.rst).
 
 License
 -------
+
+This library is based on the work that has been put into the original 'PyBluez' library.
 
 > PyBluez is free software; you can redistribute it and/or modify it under the
 terms of the GNU General Public License as published by the Free Software
