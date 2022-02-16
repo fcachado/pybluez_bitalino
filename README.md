@@ -5,9 +5,9 @@ resources.
 
 ## Platform Support
 
-|       Linux        |      Windows       |
-| :----------------: | :----------------: |
-| :heavy_check_mark: | :heavy_check_mark: |
+|      Windows       |
+| :----------------: |
+| :heavy_check_mark: |
 
 ## Python Version Support
 
