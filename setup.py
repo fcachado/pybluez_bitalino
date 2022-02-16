@@ -126,11 +126,11 @@ setup(
     version="0.30",
     description="Bluetooth Python extension module",
     author="BitalinoWorld",
+    author_email="bitalino@plux.info",
     ext_modules=ext_modules,
     packages=packages,
     python_requires=">=3.7",
     classifiers=[
-        "Development Status :: 4 - Beta",
         "License :: OSI Approved :: GNU General Public License (GPL)",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
